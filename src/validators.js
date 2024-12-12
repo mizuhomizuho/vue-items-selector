@@ -1,10 +1,13 @@
-
 export function validateBoxItems(items) {
   return items.every(isBoxItemValid)
 }
 
-export function isBoxItemValid({ id, name }) {
-  return isNumber(id) && isNotEmptyString(name)
+export function isBoxItemValid({ id, name, color }) {
+  return isNumber(id) && isNotEmptyString(name) && isNotEmptyString(color)
+}
+
+export function isNumber(value) {
+  return typeof value === 'number'
 }
 
 function isNotEmptyString(value) {
@@ -13,8 +16,4 @@ function isNotEmptyString(value) {
 
 function isString(value) {
   return typeof value === 'string'
-}
-
-function isNumber(value) {
-  return typeof value === 'number'
 }

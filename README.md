@@ -1,4 +1,8 @@
-# vue-items-selector
+# Vue items selector
+
+## To view, follow the link
+
+https://vue-items-selector.surge.sh
 
 ## Project Setup
 
